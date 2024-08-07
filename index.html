@@ -57,6 +57,11 @@
             margin: 10px;
             flex: 1;
             min-width: 200px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .service:hover {
+            background-color: #e2e6ea;
         }
         .contact-form {
             background-color: #f8f9fa;
@@ -91,9 +96,6 @@
             width: 100%;
             bottom: 0;
         }
-        .hidden-whatsapp {
-            display: none;
-        }
     </style>
 </head>
 <body>
@@ -112,15 +114,15 @@
     <section id="services">
         <h2>Our Services</h2>
         <div class="services">
-            <div class="service">
+            <div class="service" onclick="redirectToWhatsApp('Printing Services')">
                 <h3>Printing Services</h3>
                 <p>We offer high-quality printing services for all your needs. From business cards to brochures, we ensure top-notch quality.</p>
             </div>
-            <div class="service">
+            <div class="service" onclick="redirectToWhatsApp('Photocopying')">
                 <h3>Photocopying</h3>
                 <p>Our photocopying services are fast and reliable, ensuring that you get your documents copied efficiently and accurately.</p>
             </div>
-            <div class="service">
+            <div class="service" onclick="redirectToWhatsApp('Online Registration')">
                 <h3>Online Registration</h3>
                 <p>Streamline your registration processes with our online registration services. Simple, fast, and user-friendly.</p>
             </div>
@@ -143,14 +145,19 @@
                 <button type="submit">Send Message</button>
             </form>
         </div>
-        <!-- Hidden WhatsApp link -->
-        <div class="hidden-whatsapp">
-            <a href="https://wa.me/090221234" target="_blank">Contact via WhatsApp</a>
-        </div>
     </section>
 
     <footer>
         <p>&copy; 2024 Sammylee Venture | Akungba, AAUA | <a href="https://wa.me/090221234" target="_blank" style="color: white;">Contact us on WhatsApp</a></p>
     </footer>
+
+    <script>
+        function redirectToWhatsApp(service) {
+            const phoneNumber = "090221234";
+            const message = encodeURIComponent(`Hi, I'm interested in ${service}. Please provide more details.`);
+            const url = `https://wa.me/${phoneNumber}?text=${message}`;
+            window.location.href = url;
+        }
+    </script>
 </body>
 </html>
