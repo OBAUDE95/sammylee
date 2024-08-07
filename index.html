@@ -3,129 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sammylee Venture | Printing, Photocopying & Registration Services</title>
-    <meta name="description" content="Sammylee Venture offers top-notch printing, photocopying, and online registration services in Akungba, AAUA. Contact us for all your documentation needs.">
-    <meta name="keywords" content="printing, photocopying, online registration, Akungba, AAUA">
+    <title>Sammylee Venture</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             color: #333;
-            background-color: #f4f4f4;
         }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 0;
+        .header {
+            background-color: #282c34;
+            color: #61dafb;
+            padding: 10px 20px;
             text-align: center;
-            position: relative;
-            border-bottom: 4px solid #fff;
         }
-        .logo {
-            width: 100px;
+        .header img {
+            max-width: 100px;
             height: auto;
-            position: absolute;
-            top: 10px;
-            left: 20px;
-        }
-        .motto {
-            margin-top: 20px;
-            font-size: 18px;
-            font-weight: bold;
-            color: #fff;
         }
         .container {
-            width: 80%;
-            margin: 0 auto;
             padding: 20px;
         }
-        .section {
-            margin-bottom: 20px;
-            text-align: center;
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
         }
-        .section img {
+        .service {
+            flex: 1;
+            min-width: 200px;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+        }
+        .service img {
             width: 100%;
-            max-width: 400px;
             height: auto;
             border-radius: 8px;
-            margin-bottom: 10px;
-        }
-        .section h3 {
-            font-size: 20px;
-            color: #4CAF50;
         }
         .contact-form {
             margin-top: 20px;
-            text-align: center;
         }
         .contact-form input, .contact-form textarea {
-            width: calc(100% - 22px);
+            width: 100%;
             padding: 10px;
             margin-bottom: 10px;
             border: 1px solid #ddd;
             border-radius: 4px;
-            box-sizing: border-box;
         }
         .contact-form button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px;
+            background-color: #61dafb;
             border: none;
+            color: #fff;
+            padding: 10px 20px;
             border-radius: 4px;
             cursor: pointer;
-            font-size: 16px;
         }
         .contact-form button:hover {
-            background-color: #45a049;
+            background-color: #4fa3c5;
         }
-        footer {
-            background-color: #fff;
-            color: #333;
-            text-align: center;
+        .footer {
+            background-color: #282c34;
+            color: #fff;
             padding: 10px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
             border-top: 1px solid #ddd;
-            position: relative;
-            z-index: 1;
         }
-        .footer-links {
-            margin-top: 10px;
-        }
-        .footer-links a {
-            color: #4CAF50;
+        .footer a {
+            color: #61dafb;
             text-decoration: none;
-        }
-        .footer-links a:hover {
-            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <header>
-        <img src="https://www.pngitem.com/pimgs/m/146-1468487_transparent-background-clipart-logo-png-download.png" alt="Sammylee Venture Logo" class="logo">
-        <div class="motto">Your Reliable Partner for Printing, Photocopying, and Online Registration Services</div>
-    </header>
-
+    <div class="header">
+        <img src="https://www.freeiconspng.com/uploads/logo-png-5.png" alt="Sammylee Venture Logo">
+        <h1>Sammylee Venture</h1>
+        <p>Your one-stop solution for printing, photocopying, and online registration in Akungba, AAUA</p>
+    </div>
     <div class="container">
-        <div class="section">
-            <h2>Our Services</h2>
-            <a href="https://wa.me/+2349033970718?text=I%20am%20interested%20in%20printing%20services" style="text-decoration: none;">
-                <img src="https://images.unsplash.com/photo-1555685812-26d3f282282b" alt="Printing Service">
-                <h3>Printing Service</h3>
-            </a>
-            <a href="https://wa.me/+2349033970718?text=I%20am%20interested%20in%20photocopy%20services" style="text-decoration: none;">
-                <img src="https://images.unsplash.com/photo-1602712566018-4d1077e66f84" alt="Photocopy Service">
-                <h3>Photocopy Service</h3>
-            </a>
-            <a href="https://wa.me/+2349033970718?text=I%20am%20interested%20in%20online%20registration%20services" style="text-decoration: none;">
-                <img src="https://images.unsplash.com/photo-1560782753-4b22953c7d6e" alt="Online Registration">
-                <h3>Online Registration</h3>
-            </a>
+        <div class="services">
+            <div class="service">
+                <img src="https://images.unsplash.com/photo-1506748686214e9df14d8f1d2c43dce7b79d02e4c5e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8cHJpbnRpbmclMjBzZXJ2aWNlfGVufDB8fHx8MTY5Nzg5NjY4&ixlib=rb-1.2.1&q=80&w=1080" alt="Printing Service">
+                <h2><a href="https://wa.me/+2349033970718?text=I%20am%20interested%20in%20your%20printing%20services">Printing Service</a></h2>
+            </div>
+            <div class="service">
+                <img src="https://images.unsplash.com/photo-1581092466595-57344b81f54f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8cGhvdG9jb3B5JTIwc2VydmljZXxlbnwwfHx8fDE2OTc4OTczNzE&ixlib=rb-1.2.1&q=80&w=1080" alt="Photocopy Service">
+                <h2><a href="https://wa.me/+2349033970718?text=I%20am%20interested%20in%20your%20photocopy%20services">Photocopy Service</a></h2>
+            </div>
+            <div class="service">
+                <img src="https://images.unsplash.com/photo-1560782753-4b22953c7d6e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8b25saW5lJTIwcmVnaXN0cmF0aW9ufGVufDB8fHx8MTY5Nzg5NzIwMw&ixlib=rb-1.2.1&q=80&w=1080" alt="Online Registration">
+                <h2><a href="https://wa.me/+2349033970718?text=I%20am%20interested%20in%20your%20online%20registration%20services">Online Registration</a></h2>
+            </div>
         </div>
-
-        <div class="section contact-form">
+        <div class="contact-form">
             <h2>Contact Us</h2>
-            <form action="https://wa.me/+2349033970718" method="get" target="_blank">
+            <form action="https://wa.me/+2349033970718" method="get">
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Your Email" required>
                 <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
@@ -133,12 +110,9 @@
             </form>
         </div>
     </div>
-
-    <footer>
-        <p>© 2024 Sammylee Venture | Akungba, AAUA</p>
-        <div class="footer-links">
-            <a href="https://wa.me/+2349033970718">Contact us on WhatsApp</a>
-        </div>
-    </footer>
+    <div class="footer">
+        <p>© 2024 Sammylee Venture | Akungba, AAUA | <a href="https://wa.me/+2349033970718">Contact us on WhatsApp</a></p>
+    </div>
 </body>
 </html>
+
