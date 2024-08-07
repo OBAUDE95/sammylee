@@ -9,114 +9,117 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            color: #333;
         }
         header {
-            background-color: #333;
-            color: #fff;
+            background-color: #4CAF50;
+            color: white;
             padding: 10px 0;
             text-align: center;
+            position: relative;
         }
-        header img {
-            height: 60px; /* Adjust the height of the logo */
-            vertical-align: middle;
+        .logo {
+            width: 100px;
+            height: auto;
+            position: absolute;
+            top: 10px;
+            left: 20px;
+        }
+        .motto {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
         }
         .container {
             width: 80%;
-            margin: auto;
-            overflow: hidden;
+            margin: 0 auto;
             padding: 20px;
         }
-        .services {
-            background: #fff;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .services h2 {
-            margin-top: 0;
-        }
-        .service-item {
+        .section {
             margin-bottom: 20px;
         }
-        .service-item img {
+        .section img {
             width: 100%;
-            border-radius: 5px;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
         }
-        .contact {
-            background: #fff;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        .contact-form {
             margin-top: 20px;
         }
-        .contact h2 {
-            margin-top: 0;
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .contact-form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #45a049;
         }
         footer {
-            background-color: #333;
-            color: #fff;
+            background-color: #f1f1f1;
+            color: #333;
             text-align: center;
-            padding: 10px 0;
-            position: relative;
-            bottom: 0;
-            width: 100%;
+            padding: 10px;
+            border-top: 1px solid #ddd;
         }
-        footer a {
-            color: #ffeb3b;
-            text-decoration: none;
-        }
-        footer a:hover {
-            text-decoration: underline;
-        }
-        .contact-button {
-            background-color: #25d366; /* WhatsApp color */
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-            text-align: center;
-            display: block;
+        .footer-links {
             margin-top: 10px;
-            text-decoration: none;
         }
-        .contact-button:hover {
-            background-color: #1ebea5; /* Slightly darker shade for hover effect */
+        .footer-links a {
+            color: #4CAF50;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="container">
-            <img src="https://www.kindpng.com/picc/m/193-1935305_wellness-logo-hd-png-download.png" alt="Sammylee Venture Logo">
-        </div>
+        <img src="https://www.example.com/logo.png" alt="Sammylee Venture Logo" class="logo">
+        <div class="motto">Your Reliable Partner for Printing, Photocopying, and Online Registration Services</div>
     </header>
+
     <div class="container">
-        <section class="services">
+        <div class="section">
             <h2>Our Services</h2>
-            <div class="service-item">
-                <img src="https://images.unsplash.com/photo-1603730827014-1f4820736e95" alt="Printing Service">
-                <p><a href="https://wa.me/+2349033970718?text=I'm%20interested%20in%20your%20printing%20service" class="contact-button">Contact for Printing</a></p>
-            </div>
-            <div class="service-item">
-                <img src="https://images.unsplash.com/photo-1612801504770-6b02420dc737" alt="Photocopy Service">
-                <p><a href="https://wa.me/+2349033970718?text=I'm%20interested%20in%20your%20photocopy%20service" class="contact-button">Contact for Photocopy</a></p>
-            </div>
-            <div class="service-item">
-                <img src="https://images.unsplash.com/photo-1593642532973-d31b6557fa68" alt="Online Registration">
-                <p><a href="https://wa.me/+2349033970718?text=I'm%20interested%20in%20your%20online%20registration%20service" class="contact-button">Contact for Online Registration</a></p>
-            </div>
-        </section>
-        <section class="contact">
+            <a href="https://wa.me/+2349033970718?text=I%20am%20interested%20in%20printing%20services" style="text-decoration: none; color: #4CAF50;">
+                <img src="https://www.example.com/printing.jpg" alt="Printing Service">
+                <h3>Printing Service</h3>
+            </a>
+            <a href="https://wa.me/+2349033970718?text=I%20am%20interested%20in%20photocopy%20services" style="text-decoration: none; color: #4CAF50;">
+                <img src="https://www.example.com/photocopy.jpg" alt="Photocopy Service">
+                <h3>Photocopy Service</h3>
+            </a>
+            <a href="https://wa.me/+2349033970718?text=I%20am%20interested%20in%20online%20registration%20services" style="text-decoration: none; color: #4CAF50;">
+                <img src="https://www.example.com/registration.jpg" alt="Online Registration">
+                <h3>Online Registration</h3>
+            </a>
+        </div>
+
+        <div class="section contact-form">
             <h2>Contact Us</h2>
-            <p>For more details or to get in touch, please use the contact button below:</p>
-            <a href="https://wa.me/+2349033970718" class="contact-button">Chat on WhatsApp</a>
-        </section>
+            <form action="https://wa.me/+2349033970718" method="get" target="_blank">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
     </div>
+
     <footer>
-        <p>© 2024 Sammylee Venture | Akungba, AAUA | Contact us on <a href="https://wa.me/+2349033970718">WhatsApp</a></p>
+        <p>© 2024 Sammylee Venture | Akungba, AAUA</p>
+        <div class="footer-links">
+            <a href="https://wa.me/+2349033970718">Contact us on WhatsApp</a>
+        </div>
     </footer>
 </body>
 </html>
