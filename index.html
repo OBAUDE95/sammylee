@@ -26,6 +26,21 @@
             margin: 0 auto;
             overflow: hidden;
         }
+        .motto {
+            background: #fff;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin: 20px 0;
+        }
+        .motto h2 {
+            margin: 0;
+            color: #333;
+        }
+        .motto p {
+            color: #555;
+        }
         .services {
             display: flex;
             flex-wrap: wrap;
@@ -37,9 +52,10 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
             padding: 20px;
-            width: 22%;
+            width: 23%;
             margin-bottom: 20px;
             text-align: center;
+            overflow: hidden;
         }
         .service img {
             width: 100%;
@@ -48,6 +64,7 @@
         }
         .service h3 {
             margin: 10px 0;
+            font-size: 16px;
         }
         .contact-form {
             background: #fff;
@@ -55,6 +72,7 @@
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
             padding: 20px;
             margin-bottom: 20px;
+            position: relative;
         }
         .contact-form h2 {
             margin-top: 0;
@@ -83,10 +101,27 @@
             background: #333;
             color: #fff;
             text-align: center;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            padding: 15px;
+            position: relative;
+        }
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .services {
+                flex-direction: column;
+            }
+            .service {
+                width: 100%;
+            }
         }
     </style>
 </head>
@@ -94,10 +129,15 @@
     <header>
         <img src="cybercafe.jpg" alt="Sammylee Venture Logo">
         <h1>Sammylee Venture</h1>
-        <p>Akungba, AAUA</p>
+        <p>Your one-stop shop for Printing, Photocopying, Cybercafe, and Online Registration services</p>
     </header>
     
     <div class="container">
+        <div class="motto">
+            <h2>Our Motto</h2>
+            <p>Providing quality services to meet all your needs with efficiency and professionalism.</p>
+        </div>
+        
         <div class="services">
             <div class="service">
                 <img src="printing.jpg" alt="Printing Service">
