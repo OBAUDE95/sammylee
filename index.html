@@ -9,110 +9,127 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            color: #333;
+            background-color: #f4f4f4;
         }
-        .header {
-            background-color: #282c34;
-            color: #61dafb;
-            padding: 10px 20px;
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
             text-align: center;
         }
-        .header img {
-            max-width: 100px;
-            height: auto;
+        header img {
+            height: 50px;
+            vertical-align: middle;
         }
         .container {
-            padding: 20px;
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
         }
         .services {
             display: flex;
             flex-wrap: wrap;
-            gap: 20px;
+            justify-content: space-between;
+            margin: 20px 0;
         }
         .service {
-            flex: 1;
-            min-width: 200px;
-            text-align: center;
-            border: 1px solid #ddd;
+            background: #fff;
             border-radius: 8px;
-            padding: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 20px;
+            width: 22%;
+            margin-bottom: 20px;
+            text-align: center;
         }
         .service img {
             width: 100%;
             height: auto;
             border-radius: 8px;
         }
-        .contact-form {
-            margin-top: 20px;
+        .service h3 {
+            margin: 10px 0;
         }
-        .contact-form input, .contact-form textarea {
+        .contact-form {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .contact-form h2 {
+            margin-top: 0;
+        }
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
             width: 100%;
             padding: 10px;
-            margin-bottom: 10px;
+            margin: 10px 0;
             border: 1px solid #ddd;
             border-radius: 4px;
         }
-        .contact-form button {
-            background-color: #61dafb;
-            border: none;
+        .contact-form input[type="submit"] {
+            background: #333;
             color: #fff;
-            padding: 10px 20px;
+            border: none;
+            padding: 10px;
             border-radius: 4px;
             cursor: pointer;
         }
-        .contact-form button:hover {
-            background-color: #4fa3c5;
+        .contact-form input[type="submit"]:hover {
+            background: #555;
         }
-        .footer {
-            background-color: #282c34;
+        footer {
+            background: #333;
             color: #fff;
-            padding: 10px;
             text-align: center;
+            padding: 10px;
             position: fixed;
             width: 100%;
             bottom: 0;
-            border-top: 1px solid #ddd;
-        }
-        .footer a {
-            color: #61dafb;
-            text-decoration: none;
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <img src="https://www.freeiconspng.com/uploads/logo-png-5.png" alt="Sammylee Venture Logo">
+    <header>
+        <img src="cybercafe.jpg" alt="Sammylee Venture Logo">
         <h1>Sammylee Venture</h1>
-        <p>Your one-stop solution for printing, photocopying, and online registration in Akungba, AAUA</p>
-    </div>
+        <p>Akungba, AAUA</p>
+    </header>
+    
     <div class="container">
         <div class="services">
             <div class="service">
-                <img src="https://images.unsplash.com/photo-1506748686214e9df14d8f1d2c43dce7b79d02e4c5e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8cHJpbnRpbmclMjBzZXJ2aWNlfGVufDB8fHx8MTY5Nzg5NjY4&ixlib=rb-1.2.1&q=80&w=1080" alt="Printing Service">
-                <h2><a href="https://wa.me/+2349033970718?text=I%20am%20interested%20in%20your%20printing%20services">Printing Service</a></h2>
+                <img src="printing.jpg" alt="Printing Service">
+                <h3><a href="https://wa.me/+2349033970718?text=I%20am%20interested%20in%20Printing%20Service" target="_blank">Printing Service</a></h3>
             </div>
             <div class="service">
-                <img src="https://images.unsplash.com/photo-1581092466595-57344b81f54f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8cGhvdG9jb3B5JTIwc2VydmljZXxlbnwwfHx8fDE2OTc4OTczNzE&ixlib=rb-1.2.1&q=80&w=1080" alt="Photocopy Service">
-                <h2><a href="https://wa.me/+2349033970718?text=I%20am%20interested%20in%20your%20photocopy%20services">Photocopy Service</a></h2>
+                <img src="photocopy.jpg" alt="Photocopy Service">
+                <h3><a href="https://wa.me/+2349033970718?text=I%20am%20interested%20in%20Photocopy%20Service" target="_blank">Photocopy Service</a></h3>
             </div>
             <div class="service">
-                <img src="https://images.unsplash.com/photo-1560782753-4b22953c7d6e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8b25saW5lJTIwcmVnaXN0cmF0aW9ufGVufDB8fHx8MTY5Nzg5NzIwMw&ixlib=rb-1.2.1&q=80&w=1080" alt="Online Registration">
-                <h2><a href="https://wa.me/+2349033970718?text=I%20am%20interested%20in%20your%20online%20registration%20services">Online Registration</a></h2>
+                <img src="cybercafe.jpg" alt="Cybercafe Service">
+                <h3><a href="https://wa.me/+2349033970718?text=I%20am%20interested%20in%20Cybercafe%20Service" target="_blank">Cybercafe Service</a></h3>
+            </div>
+            <div class="service">
+                <img src="online.jpg" alt="Online Registration">
+                <h3><a href="https://wa.me/+2349033970718?text=I%20am%20interested%20in%20Online%20Registration" target="_blank">Online Registration</a></h3>
             </div>
         </div>
+        
         <div class="contact-form">
             <h2>Contact Us</h2>
-            <form action="https://wa.me/+2349033970718" method="get">
+            <form action="https://wa.me/+2349033970718" method="get" target="_blank">
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <input type="submit" value="Send Message">
             </form>
         </div>
     </div>
-    <div class="footer">
-        <p>© 2024 Sammylee Venture | Akungba, AAUA | <a href="https://wa.me/+2349033970718">Contact us on WhatsApp</a></p>
-    </div>
+    
+    <footer>
+        <p>© 2024 Sammylee Venture | Akungba, AAUA | Contact us on <a href="https://wa.me/+2349033970718" target="_blank">WhatsApp</a></p>
+    </footer>
 </body>
 </html>
-
