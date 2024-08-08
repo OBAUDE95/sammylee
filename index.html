@@ -3,211 +3,281 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sammylee Computer Venture</title>
+    <title>Sammylee Computer Venture Services</title>
     <style>
+        /* General styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        header img {
-            height: 50px;
-            vertical-align: middle;
-        }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            overflow: hidden;
-        }
-        .motto {
-            background: #fff;
-            padding: 20px;
-            text-align: center;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            margin: 20px 0;
-        }
-        .motto h2 {
-            margin: 0;
             color: #333;
+            line-height: 1.6;
         }
-        .motto p {
-            color: #555;
-        }
-        .services {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            margin: 20px 0;
-        }
-        .service {
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            padding: 20px;
-            width: 100%;
-            margin-bottom: 20px;
+
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px 0;
             text-align: center;
-            overflow: hidden;
-        }
-        .service img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-        }
-        .service h3 {
-            margin: 10px 0;
-            font-size: 16px;
-        }
-        .service p {
-            font-size: 14px;
-            color: #555;
-        }
-        .contact-form {
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            padding: 20px;
-            margin-bottom: 20px;
             position: relative;
         }
-        .contact-form h2 {
+
+        header img {
+            max-width: 150px;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+        }
+
+        header h1 {
+            margin: 0;
+            padding: 0;
+            font-size: 24px;
+        }
+
+        header p {
+            margin: 5px 0 0;
+            font-size: 16px;
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .service {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        .service img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .service h3 {
             margin-top: 0;
         }
-        .contact-form input[type="text"],
-        .contact-form input[type="email"],
+
+        .service p {
+            white-space: normal;
+            overflow-wrap: break-word;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+
+        .contact-info a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Form Styles */
+        .contact-form {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form h3 {
+            margin-top: 0;
+        }
+
+        .contact-form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        .contact-form input,
         .contact-form textarea {
             width: 100%;
             padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ddd;
-            border-radius: 4px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
         }
-        .contact-form input[type="submit"] {
-            background: #333;
+
+        .contact-form button {
+            background-color: #007bff;
             color: #fff;
             border: none;
-            padding: 10px;
-            border-radius: 4px;
+            padding: 10px 20px;
             cursor: pointer;
+            border-radius: 5px;
         }
-        .contact-form input[type="submit"]:hover {
-            background: #555;
-        }
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 15px;
-            position: relative;
-        }
-        footer p {
-            margin: 0;
-            font-size: 14px;
-        }
-        footer a {
-            color: #ffcc00;
-            text-decoration: none;
-        }
-        footer a:hover {
-            text-decoration: underline;
-        }
-        @media (max-width: 768px) {
-            .services {
-                flex-direction: column;
+
+        /* Responsive Styles */
+        @media (max-width: 600px) {
+            nav ul li {
+                display: block;
+                margin-bottom: 10px;
             }
-            .service {
+
+            .container {
                 width: 100%;
+                padding: 0 10px;
+            }
+
+            .service p {
+                white-space: normal;
+                overflow-wrap: break-word;
+            }
+
+            header img {
+                position: static;
+                display: block;
+                margin: 0 auto 10px;
+                transform: none;
+            }
+
+            header h1 {
+                font-size: 20px;
+            }
+
+            header p {
+                font-size: 14px;
             }
         }
     </style>
+    <script>
+        function redirectToWhatsApp(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const message = document.getElementById('message').value;
+            const encodedMessage = encodeURIComponent(`My name is ${name} and my question is: ${message}`);
+            window.open(`https://wa.me/2349033970718?text=${encodedMessage}`, '_blank');
+        }
+    </script>
 </head>
 <body>
+
+    <!-- Header Section -->
     <header>
         <img src="cybercafe.jpg" alt="Sammylee Computer Venture Logo">
-        <h1>Sammylee Computer Venture</h1>
-        <p>We offer top-notch Cybercafe services, Data Entry, Content Writing, and Academic Projects.</p>
-    </header>
-    
-    <div class="container">
-        <div class="motto">
-            <h2>Our Motto</h2>
-            <p>We provide quality services to meet all your needs with efficiency and professionalism.</p>
+        <div class="container">
+            <h1>Welcome to Sammylee Computer Venture</h1>
+            <p>We offer top-notch Cybercafe services, Data Entry, Content Writing, and Academic Projects.</p>
         </div>
-        
-        <div class="services">
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Services Section -->
+    <div class="container" id="services">
+        <h2>Our Services</h2>
+
+        <a href="https://wa.me/2349033970718?text=I%20am%20interested%20in%20your%20services%20for%20Printing%20and%20Photocopying" target="_blank">
             <div class="service">
-                <img src="cybercafe.jpg" alt="Cybercafe Service">
-                <h3>Cybercafe Services</h3>
-                <p>Get access to high-speed internet, online registration, and other related services in a comfortable environment.</p>
+                <img src="printing_service.jpg" alt="Printing and Photocopying">
+                <h3>Printing and Photocopying</h3>
+                <p>We offer high-quality printing and photocopying services that cater to all your needs...</p>
             </div>
+        </a>
+
+        <a href="https://wa.me/2349033970718?text=I%20am%20interested%20in%20your%20services%20for%20Online%20Registration" target="_blank">
             <div class="service">
-                <img src="data_entry.jpg" alt="Data Entry">
-                <h3>Data Entry</h3>
-                <p>Our expert data entry services ensure accurate and timely data processing for your business or academic needs.</p>
+                <img src="online_registration.jpg" alt="Online Registration">
+                <h3>Online Registration</h3>
+                <p>Our online registration services are reliable and fast, ensuring you meet your deadlines...</p>
             </div>
+        </a>
+
+        <a href="https://wa.me/2349033970718?text=I%20am%20interested%20in%20your%20services%20for%20Content%20Writing" target="_blank">
             <div class="service">
                 <img src="content_writing.jpg" alt="Content Writing">
                 <h3>Content Writing</h3>
-                <p>We offer professional content writing services, tailored to meet your academic, business, or personal requirements.</p>
+                <p>We provide top-notch content writing services, specializing in academic projects and more...</p>
             </div>
+        </a>
+
+        <a href="https://wa.me/2349033970718?text=I%20am%20interested%20in%20your%20services%20for%20Data%20Entry%20Services" target="_blank">
             <div class="service">
-                <img src="academic_project.jpg" alt="Academic Projects">
-                <h3>Academic Projects</h3>
-                <p>We specialize in assisting with academic projects, especially in social sciences, education, and English. Best in Akungba for hypothesis development and project support.</p>
+                <img src="data_entry.jpg" alt="Data Entry Services">
+                <h3>Data Entry Services</h3>
+                <p>Our data entry services are precise and efficient, helping you manage your data effectively...</p>
             </div>
-        </div>
-        
+        </a>
+
+        <!-- Add more services similarly as needed -->
+    </div>
+
+    <!-- Contact Form Section -->
+    <div class="container">
         <div class="contact-form">
-            <h2>Contact Us</h2>
-            <form action="https://wa.me/+2349033970718" method="get" target="_blank">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-                <input type="submit" value="Send Message">
+            <h3>Contact Us</h3>
+            <form onsubmit="redirectToWhatsApp(event)">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
             </form>
         </div>
     </div>
-    
-    <footer>
-        <p>© 2024 Sammylee Computer Venture | Akungba, AAUA | Contact us on <a href="https://wa.me/+2349033970718" target="_blank">WhatsApp</a></p>
+
+    <!-- Footer Section with Contact Information -->
+    <footer id="contact">
+        <div class="container">
+            <p>Contact Address: Shop 4, OBJ Small Gate, AAUA</p>
+            <p>Email: <a href="mailto:Sammylee08062@gmail.com">Sammylee08062@gmail.com</a></p>
+            <p>WhatsApp: <a href="https://wa.me/2349033970718" target="_blank">+2349033970718</a></p>
+        </div>
     </footer>
 
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Sammylee Computer Venture",
-      "image": "cybercafe.jpg",
-      "@id": "",
-      "url": "http://www.sammyleecomputer.com",
-      "telephone": "+2349033970718",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "AAUA Small Gate",
-        "addressLocality": "Akungba",
-        "addressRegion": "Ondo State",
-        "postalCode": "340001",
-        "addressCountry": "Nigeria"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 7.4647,
-        "longitude": 5.7765
-      },
-      "sameAs": [
-        "https://www.facebook.com/SammyleeVenture",
-        "https://www.instagram.com/SammyleeVenture"
-      ],
-      "description": "Sammylee Computer Venture offers professional Cybercafe services, expert Data Entry, Content Writing, and specialized Academic Project support including social sciences, education, English, and hypothesis development in Akungba, AAUA. We are recognized as the best for academic project assistance in the area."
-    }
-    </script>
 </body>
 </html>
