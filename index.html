@@ -42,9 +42,9 @@
             color: #555;
         }
         .services {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
             margin: 20px 0;
         }
         .service {
@@ -52,8 +52,6 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
             padding: 20px;
-            width: 100%;
-            margin-bottom: 20px;
             text-align: center;
             overflow: hidden;
         }
@@ -69,6 +67,19 @@
         .service p {
             font-size: 14px;
             color: #555;
+        }
+        .service a {
+            display: block;
+            margin-top: 10px;
+            background-color: #25D366;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .service a:hover {
+            background-color: #128C7E;
         }
         .contact-form {
             background: #fff;
@@ -121,10 +132,7 @@
         }
         @media (max-width: 768px) {
             .services {
-                flex-direction: column;
-            }
-            .service {
-                width: 100%;
+                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -147,21 +155,25 @@
                 <img src="cybercafe.jpg" alt="Cybercafe Service">
                 <h3>Cybercafe Services</h3>
                 <p>Get access to high-speed internet, online registration, and other related services in a comfortable environment.</p>
+                <a href="https://wa.me/+2349033970718?text=I%20am%20interested%20in%20Cybercafe%20Services">Contact Us</a>
             </div>
             <div class="service">
                 <img src="data_entry.jpg" alt="Data Entry">
                 <h3>Data Entry</h3>
                 <p>Our expert data entry services ensure accurate and timely data processing for your business or academic needs.</p>
+                <a href="https://wa.me/+2349033970718?text=I%20am%20interested%20in%20Data%20Entry%20Services">Contact Us</a>
             </div>
             <div class="service">
                 <img src="content_writing.jpg" alt="Content Writing">
                 <h3>Content Writing</h3>
                 <p>We offer professional content writing services, tailored to meet your academic, business, or personal requirements.</p>
+                <a href="https://wa.me/+2349033970718?text=I%20am%20interested%20in%20Content%20Writing%20Services">Contact Us</a>
             </div>
             <div class="service">
                 <img src="academic_project.jpg" alt="Academic Projects">
                 <h3>Academic Projects</h3>
                 <p>We specialize in assisting with academic projects, especially in social sciences, education, and English. Best in Akungba for hypothesis development and project support.</p>
+                <a href="https://wa.me/+2349033970718?text=I%20am%20interested%20in%20Academic%20Project%20Support">Contact Us</a>
             </div>
         </div>
         
